@@ -1,0 +1,38 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Executive Dashboard</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font-family: 'Segoe UI', Arial; background: #f0f2f5; }
+            .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 1.5rem; text-align: center; }
+            .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; padding: 2rem; }
+            .kpi-card { background: white; border-radius: 15px; padding: 1.5rem; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+            .kpi-value { font-size: 2rem; font-weight: bold; color: #667eea; }
+            .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem; padding: 0 2rem 2rem 2rem; }
+            .widget { background: white; border-radius: 15px; padding: 1.5rem; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+            .widget h3 { margin-bottom: 1rem; border-bottom: 2px solid #667eea; padding-bottom: 0.5rem; }
+            .recommendation { background: #e8f5e9; padding: 10px; margin: 10px 0; border-radius: 8px; }
+            .trend-up { color: #28a745; }
+            .trend-down { color: #dc3545; }
+            @media (max-width: 768px) { .kpi-grid { grid-template-columns: 1fr; } .dashboard-grid { grid-template-columns: 1fr; } }
+        </style>
+    </head>
+    <body>
+        <div class="header"><h1>👔 Executive Compensation Dashboard</h1><p>Tech Salary Intelligence | Real-time Analytics</p></div>
+        <div class="kpi-grid">
+            <div class="kpi-card"><div class="kpi-value">$165,200</div><div>Average Salary</div><div class="trend-up">↑ 5.2% YoY</div></div>
+            <div class="kpi-card"><div class="kpi-value">$475K</div><div>Top 10% Salary</div><div class="trend-up">↑ 8.1% YoY</div></div>
+            <div class="kpi-card"><div class="kpi-value">7.2%</div><div>Gender Pay Gap</div><div class="trend-down">↓ 0.5% YoY</div></div>
+            <div class="kpi-card"><div class="kpi-value">-12%</div><div>Remote Adjustment</div><div class="trend-down">↓ 2% YoY</div></div>
+        </div>
+        <div class="dashboard-grid">
+            <div class="widget"><h3>🎯 Top 5 Highest Paying Roles</h3><ol><li>ML Engineer - $285K</li><li>Data Architect - $268K</li><li>Cloud Architect - $255K</li><li>SRE Lead - $242K</li><li>Blockchain Developer - $238K</li></ol></div>
+            <div class="widget"><h3>📍 Location Rankings</h3><ol><li>San Francisco - $245K</li><li>New York - $238K</li><li>London - $198K</li><li>Boston - $185K</li><li>Seattle - $178K</li></ol></div>
+            <div class="widget"><h3>💡 Strategic Recommendations</h3><div class="recommendation">🎓 Invest in L&D - Skills yield $8.5K per skill</div><div class="recommendation">🏠 Embrace Remote Work - 15-20% cost reduction</div><div class="recommendation">⚠️ Address Pay Equity - 7.2% gap needs attention</div><div class="recommendation">📜 Certification Programs - 22% ROI</div></div>
+            <div class="widget"><h3>📈 Key Trends</h3><ul><li>✅ AI/ML roles growing 35% YoY</li><li>✅ Remote work at 40% of roles</li><li>⚠️ Retention risk at 5-8 years experience</li><li>✅ Certification holders earn 22% more</li></ul></div>
+        </div>
+    </body>
+    </html>
+    

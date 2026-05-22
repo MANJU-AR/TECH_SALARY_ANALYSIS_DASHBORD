@@ -1,0 +1,992 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Structural Profiling Report</title>
+        <style>
+            body { font-family: 'Segoe UI', Arial, sans-serif; margin: 20px; background: #f0f2f5; }
+            .container { max-width: 1400px; margin: 0 auto; }
+            .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            h1 { color: #667eea; }
+            h2 { color: #764ba2; border-bottom: 2px solid #667eea; padding-bottom: 10px; }
+            .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 20px 0; }
+            .stat-item { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; border-radius: 10px; text-align: center; }
+            .stat-number { font-size: 2em; font-weight: bold; }
+            table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background: #667eea; color: white; }
+            tr:nth-child(even) { background: #f9f9f9; }
+            .collapsible { background-color: #667eea; color: white; cursor: pointer; padding: 15px; width: 100%; border: none; text-align: left; outline: none; font-size: 1.1em; border-radius: 5px; margin-top: 10px; }
+            .active, .collapsible:hover { background-color: #764ba2; }
+            .content { padding: 0 18px; display: none; overflow: hidden; background-color: #f9f9f9; border-radius: 5px; margin-top: 5px; }
+        </style>
+        <script>
+            function toggleCollapsible(element) {
+                element.classList.toggle("active");
+                var content = element.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>🔬 Structural Profiling Report</h1>
+                <div class="stat-grid">
+                    <div class="stat-item"><div class="stat-number">10000</div>Rows</div>
+                    <div class="stat-item"><div class="stat-number">50</div>Columns</div>
+                    <div class="stat-item"><div class="stat-number">0</div>Duplicates</div>
+                    <div class="stat-item"><div class="stat-number">4508</div>Missing Values</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📊 Numerical Columns Statistics</h2>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>experience_years_total</th>
+      <th>experience_years_in_field</th>
+      <th>num_skills</th>
+      <th>annual_salary_usd</th>
+      <th>monthly_salary_usd</th>
+      <th>hourly_rate_usd</th>
+      <th>annual_bonus_usd</th>
+      <th>bonus_percentage</th>
+      <th>equity_total_value_usd</th>
+      <th>equity_vesting_years</th>
+      <th>effective_tax_rate_pct</th>
+      <th>annual_tax_usd</th>
+      <th>annual_net_salary_usd</th>
+      <th>monthly_net_salary_usd</th>
+      <th>monthly_housing_usd</th>
+      <th>monthly_transportation_usd</th>
+      <th>monthly_food_usd</th>
+      <th>monthly_utilities_usd</th>
+      <th>monthly_healthcare_usd</th>
+      <th>monthly_entertainment_usd</th>
+      <th>monthly_education_loan_usd</th>
+      <th>monthly_childcare_usd</th>
+      <th>monthly_miscellaneous_usd</th>
+      <th>monthly_total_expenses_usd</th>
+      <th>annual_total_expenses_usd</th>
+      <th>annual_savings_usd</th>
+      <th>vacation_weeks</th>
+      <th>overtime_hours_per_month</th>
+      <th>months_since_last_promotion</th>
+      <th>num_previous_companies</th>
+      <th>job_satisfaction_score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.00000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+      <td>10000.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>31.637600</td>
+      <td>5.717070</td>
+      <td>4.019440</td>
+      <td>5.494200</td>
+      <td>171786.241744</td>
+      <td>14315.520181</td>
+      <td>91.601258</td>
+      <td>12363.473986</td>
+      <td>7.214300</td>
+      <td>28710.88860</td>
+      <td>1.495000</td>
+      <td>26.880135</td>
+      <td>47318.252791</td>
+      <td>124467.988953</td>
+      <td>10372.332381</td>
+      <td>5492.814113</td>
+      <td>940.043676</td>
+      <td>2452.307435</td>
+      <td>1225.894512</td>
+      <td>1021.957002</td>
+      <td>1022.880768</td>
+      <td>257.602000</td>
+      <td>916.206</td>
+      <td>818.562067</td>
+      <td>14148.267573</td>
+      <td>169779.210876</td>
+      <td>16530.105659</td>
+      <td>3.561300</td>
+      <td>10.581700</td>
+      <td>34.515400</td>
+      <td>1.629600</td>
+      <td>6.974100</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>6.856892</td>
+      <td>3.689415</td>
+      <td>2.823968</td>
+      <td>1.716176</td>
+      <td>72550.937998</td>
+      <td>6045.911530</td>
+      <td>45.335040</td>
+      <td>10863.881829</td>
+      <td>5.159558</td>
+      <td>100995.44362</td>
+      <td>1.704425</td>
+      <td>5.186787</td>
+      <td>23353.267830</td>
+      <td>51474.438152</td>
+      <td>4289.536469</td>
+      <td>3208.529938</td>
+      <td>890.624063</td>
+      <td>1428.101058</td>
+      <td>711.313400</td>
+      <td>595.028739</td>
+      <td>597.904710</td>
+      <td>288.905657</td>
+      <td>1062.339</td>
+      <td>477.180884</td>
+      <td>7668.022002</td>
+      <td>92016.264021</td>
+      <td>10854.098074</td>
+      <td>1.543464</td>
+      <td>7.590467</td>
+      <td>32.959976</td>
+      <td>1.539364</td>
+      <td>2.157428</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>18.000000</td>
+      <td>0.500000</td>
+      <td>0.500000</td>
+      <td>3.000000</td>
+      <td>19846.270000</td>
+      <td>1653.860000</td>
+      <td>9.540000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>10.000000</td>
+      <td>3359.740000</td>
+      <td>15784.860000</td>
+      <td>1315.400000</td>
+      <td>128.040000</td>
+      <td>12.540000</td>
+      <td>55.080000</td>
+      <td>29.140000</td>
+      <td>24.020000</td>
+      <td>25.710000</td>
+      <td>0.000000</td>
+      <td>0.000</td>
+      <td>20.650000</td>
+      <td>424.070000</td>
+      <td>5088.840000</td>
+      <td>-4103.200000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>27.000000</td>
+      <td>2.800000</td>
+      <td>1.800000</td>
+      <td>4.000000</td>
+      <td>121355.045000</td>
+      <td>10112.925000</td>
+      <td>61.190000</td>
+      <td>2282.800000</td>
+      <td>5.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>23.330000</td>
+      <td>30852.242500</td>
+      <td>87793.710000</td>
+      <td>7316.140000</td>
+      <td>3354.975000</td>
+      <td>310.520000</td>
+      <td>1501.330000</td>
+      <td>751.657500</td>
+      <td>621.070000</td>
+      <td>622.602500</td>
+      <td>0.000000</td>
+      <td>0.000</td>
+      <td>497.502500</td>
+      <td>9118.967500</td>
+      <td>109427.610000</td>
+      <td>8731.762500</td>
+      <td>2.000000</td>
+      <td>4.500000</td>
+      <td>8.000000</td>
+      <td>0.000000</td>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>32.000000</td>
+      <td>5.500000</td>
+      <td>3.600000</td>
+      <td>5.000000</td>
+      <td>167055.180000</td>
+      <td>13921.265000</td>
+      <td>85.295000</td>
+      <td>11302.280000</td>
+      <td>8.000000</td>
+      <td>0.00000</td>
+      <td>0.000000</td>
+      <td>27.310000</td>
+      <td>45111.290000</td>
+      <td>121150.635000</td>
+      <td>10095.885000</td>
+      <td>5064.785000</td>
+      <td>595.535000</td>
+      <td>2272.770000</td>
+      <td>1131.095000</td>
+      <td>946.745000</td>
+      <td>941.805000</td>
+      <td>180.000000</td>
+      <td>0.000</td>
+      <td>756.215000</td>
+      <td>13336.920000</td>
+      <td>160043.040000</td>
+      <td>14228.585000</td>
+      <td>4.000000</td>
+      <td>10.100000</td>
+      <td>26.000000</td>
+      <td>1.000000</td>
+      <td>7.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>36.000000</td>
+      <td>8.200000</td>
+      <td>5.700000</td>
+      <td>7.000000</td>
+      <td>216939.867500</td>
+      <td>18078.325000</td>
+      <td>113.770000</td>
+      <td>18781.787500</td>
+      <td>10.000000</td>
+      <td>9773.00000</td>
+      <td>3.000000</td>
+      <td>30.680000</td>
+      <td>61726.357500</td>
+      <td>157002.415000</td>
+      <td>13083.535000</td>
+      <td>7247.067500</td>
+      <td>1351.177500</td>
+      <td>3238.847500</td>
+      <td>1630.580000</td>
+      <td>1350.425000</td>
+      <td>1356.390000</td>
+      <td>472.500000</td>
+      <td>1800.000</td>
+      <td>1087.377500</td>
+      <td>18536.777500</td>
+      <td>222441.330000</td>
+      <td>21807.995000</td>
+      <td>5.000000</td>
+      <td>15.700000</td>
+      <td>52.000000</td>
+      <td>2.000000</td>
+      <td>9.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>58.000000</td>
+      <td>19.600000</td>
+      <td>17.800000</td>
+      <td>8.000000</td>
+      <td>479033.820000</td>
+      <td>39919.490000</td>
+      <td>373.060000</td>
+      <td>81019.780000</td>
+      <td>20.000000</td>
+      <td>995997.00000</td>
+      <td>4.000000</td>
+      <td>43.030000</td>
+      <td>144424.630000</td>
+      <td>361556.660000</td>
+      <td>30129.720000</td>
+      <td>22716.670000</td>
+      <td>6594.230000</td>
+      <td>9980.550000</td>
+      <td>5401.630000</td>
+      <td>5049.570000</td>
+      <td>4114.480000</td>
+      <td>990.000000</td>
+      <td>3600.000</td>
+      <td>3868.360000</td>
+      <td>52337.650000</td>
+      <td>628051.800000</td>
+      <td>86728.360000</td>
+      <td>6.000000</td>
+      <td>54.100000</td>
+      <td>224.000000</td>
+      <td>10.000000</td>
+      <td>10.000000</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+
+            <div class="card">
+                <h2>🏷️ Categorical Columns Analysis</h2>
+    
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 employee_id</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 10000</p>
+            <p><strong>Most Common:</strong> EMP-00001</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>employee_id</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>EMP-10000</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>EMP-00001</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>EMP-00002</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>EMP-00003</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>EMP-00004</th>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 first_name</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 110</p>
+            <p><strong>Most Common:</strong> Alex</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>first_name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Alex</th>
+      <td>185</td>
+    </tr>
+    <tr>
+      <th>Hassan</th>
+      <td>140</td>
+    </tr>
+    <tr>
+      <th>Dmitri</th>
+      <td>130</td>
+    </tr>
+    <tr>
+      <th>Arjun</th>
+      <td>129</td>
+    </tr>
+    <tr>
+      <th>James</th>
+      <td>129</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 last_name</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 74</p>
+            <p><strong>Most Common:</strong> Novak</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>last_name</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Novak</th>
+      <td>173</td>
+    </tr>
+    <tr>
+      <th>Mueller</th>
+      <td>159</td>
+    </tr>
+    <tr>
+      <th>Yamamoto</th>
+      <td>155</td>
+    </tr>
+    <tr>
+      <th>Ali</th>
+      <td>152</td>
+    </tr>
+    <tr>
+      <th>Nakamura</th>
+      <td>152</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 gender</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 4</p>
+            <p><strong>Most Common:</strong> Male</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>gender</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Male</th>
+      <td>5504</td>
+    </tr>
+    <tr>
+      <th>Female</th>
+      <td>3447</td>
+    </tr>
+    <tr>
+      <th>Prefer not to say</th>
+      <td>543</td>
+    </tr>
+    <tr>
+      <th>Non-Binary</th>
+      <td>506</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 location</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 19</p>
+            <p><strong>Most Common:</strong> San Francisco, USA</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>location</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>San Francisco, USA</th>
+      <td>1280</td>
+    </tr>
+    <tr>
+      <th>New York, USA</th>
+      <td>987</td>
+    </tr>
+    <tr>
+      <th>Seattle, USA</th>
+      <td>881</td>
+    </tr>
+    <tr>
+      <th>London, UK</th>
+      <td>709</td>
+    </tr>
+    <tr>
+      <th>Austin, USA</th>
+      <td>637</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 currency</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 10</p>
+            <p><strong>Most Common:</strong> USD</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>currency</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>USD</th>
+      <td>5417</td>
+    </tr>
+    <tr>
+      <th>EUR</th>
+      <td>956</td>
+    </tr>
+    <tr>
+      <th>INR</th>
+      <td>896</td>
+    </tr>
+    <tr>
+      <th>GBP</th>
+      <td>709</td>
+    </tr>
+    <tr>
+      <th>CAD</th>
+      <td>431</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 primary_tech_field</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 14</p>
+            <p><strong>Most Common:</strong> Full-Stack Development</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>primary_tech_field</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Full-Stack Development</th>
+      <td>1233</td>
+    </tr>
+    <tr>
+      <th>Data Science &amp; ML</th>
+      <td>1053</td>
+    </tr>
+    <tr>
+      <th>Backend Development</th>
+      <td>1047</td>
+    </tr>
+    <tr>
+      <th>Frontend Development</th>
+      <td>916</td>
+    </tr>
+    <tr>
+      <th>Product Management</th>
+      <td>826</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 job_title</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 78</p>
+            <p><strong>Most Common:</strong> Platform Engineer</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>job_title</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Platform Engineer</th>
+      <td>363</td>
+    </tr>
+    <tr>
+      <th>Web Developer</th>
+      <td>363</td>
+    </tr>
+    <tr>
+      <th>Senior Software Engineer</th>
+      <td>256</td>
+    </tr>
+    <tr>
+      <th>Full Stack Developer</th>
+      <td>252</td>
+    </tr>
+    <tr>
+      <th>Software Engineer</th>
+      <td>241</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 employment_type</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 4</p>
+            <p><strong>Most Common:</strong> Full-time</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>employment_type</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Full-time</th>
+      <td>8011</td>
+    </tr>
+    <tr>
+      <th>Contract</th>
+      <td>992</td>
+    </tr>
+    <tr>
+      <th>Freelance</th>
+      <td>691</td>
+    </tr>
+    <tr>
+      <th>Part-time</th>
+      <td>306</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <button class="collapsible" onclick="toggleCollapsible(this)">📌 work_arrangement</button>
+        <div class="content">
+            <p><strong>Unique Values:</strong> 4</p>
+            <p><strong>Most Common:</strong> Remote</p>
+            <p><strong>Top 5 Values:</strong></p>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>work_arrangement</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Remote</th>
+      <td>3003</td>
+    </tr>
+    <tr>
+      <th>Hybrid</th>
+      <td>2778</td>
+    </tr>
+    <tr>
+      <th>Fully Remote</th>
+      <td>2628</td>
+    </tr>
+    <tr>
+      <th>On-site</th>
+      <td>1591</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+            </div>
+
+            <div class="card">
+                <h2>🔍 Data Consistency Checks</h2>
+                <h3>Column Data Types</h3>
+                <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>employee_id</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>first_name</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>last_name</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>age</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>gender</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>location</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>currency</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>primary_tech_field</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>job_title</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>employment_type</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>work_arrangement</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>experience_years_total</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>experience_years_in_field</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>education_level</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>languages_spoken</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>skills</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>primary_skill</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>num_skills</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>certifications</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>company_size</th>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>annual_salary_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_salary_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>hourly_rate_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>annual_bonus_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>bonus_percentage</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>has_equity</th>
+      <td>bool</td>
+    </tr>
+    <tr>
+      <th>equity_total_value_usd</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>equity_vesting_years</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>effective_tax_rate_pct</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>annual_tax_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>annual_net_salary_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_net_salary_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_housing_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_transportation_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_food_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_utilities_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_healthcare_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_entertainment_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_education_loan_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_childcare_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_miscellaneous_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>monthly_total_expenses_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>annual_total_expenses_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>annual_savings_usd</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>vacation_weeks</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>overtime_hours_per_month</th>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>months_since_last_promotion</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>num_previous_companies</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>job_satisfaction_score</th>
+      <td>int64</td>
+    </tr>
+    <tr>
+      <th>is_actively_looking</th>
+      <td>bool</td>
+    </tr>
+  </tbody>
+</table>
+            </div>
+        </div>
+    </body>
+    </html>
+    

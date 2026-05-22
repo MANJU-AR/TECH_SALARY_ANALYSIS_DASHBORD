@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Preprocessing Engine Dashboard</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; }
+            .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            h1 { color: #17a2b8; }
+            h2 { color: #138496; }
+            .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+            .feature-card { background: #e9ecef; padding: 15px; border-radius: 10px; }
+            .feature-name { font-weight: bold; color: #17a2b8; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>⚙️ Data Preprocessing Engine</h1>
+                <p><strong>Features Processed:</strong> 32</p>
+                <p><strong>Scaling Method:</strong> StandardScaler (Z-score normalization)</p>
+                <p><strong>Encoding Method:</strong> One-Hot Encoding for categorical variables</p>
+            </div>
+
+            <div class="card">
+                <h2>📐 Numerical Features After Scaling</h2>
+                <p><strong>Mean after scaling:</strong> 0.00</p>
+                <p><strong>Std after scaling:</strong> 1.00</p>
+                <p><strong>Range:</strong> [-2.82, 2.97]</p>
+            </div>
+
+            <div class="card">
+                <h2>🏷️ Feature Engineering Notes</h2>
+                <ul>
+                    <li>Salary features normalized for comparison</li>
+                    <li>Experience years standardized across roles</li>
+                    <li>Categorical features one-hot encoded</li>
+                    <li>Geographic features aggregated by region</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    </html>
+    

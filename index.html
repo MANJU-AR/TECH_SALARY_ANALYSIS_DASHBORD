@@ -1,0 +1,138 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Salary Analytics Platform | Complete Data Science Pipeline</title>
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                min-height: 100vh;
+            }
+            .header {
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+                color: white;
+                padding: 2rem;
+                text-align: center;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            }
+            .header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+            .header p { font-size: 1.1rem; opacity: 0.9; }
+            .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 1.5rem;
+                margin-bottom: 2rem;
+            }
+            .stat-card {
+                background: white;
+                border-radius: 15px;
+                padding: 1.5rem;
+                text-align: center;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease;
+            }
+            .stat-card:hover { transform: translateY(-5px); }
+            .stat-card h3 { color: #667eea; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+            .stat-card .value { font-size: 2rem; font-weight: bold; color: #1a1a2e; }
+            .dashboard-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+                margin-top: 2rem;
+            }
+            .dashboard-card {
+                background: white;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                transition: transform 0.3s ease;
+                cursor: pointer;
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            .dashboard-card:hover { transform: translateY(-5px); }
+            .card-header {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 1.5rem;
+                text-align: center;
+            }
+            .card-header h2 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+            .card-body { padding: 1.5rem; text-align: center; }
+            .card-body p { color: #666; line-height: 1.5; }
+            .btn {
+                display: inline-block;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 10px 25px;
+                border-radius: 25px;
+                text-decoration: none;
+                margin-top: 1rem;
+                transition: opacity 0.3s ease;
+            }
+            .btn:hover { opacity: 0.9; }
+            footer { text-align: center; padding: 2rem; color: white; margin-top: 2rem; }
+            @media (max-width: 768px) {
+                .container { padding: 1rem; }
+                .stats-grid { grid-template-columns: 1fr; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>📊 Tech Salary Analytics Platform</h1>
+            <p>Complete Data Science Pipeline | 4,500+ Tech Professionals</p>
+        </div>
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card"><h3>Total Records</h3><div class="value">4,500+</div></div>
+                <div class="stat-card"><h3>Features</h3><div class="value">60+</div></div>
+                <div class="stat-card"><h3>Job Roles</h3><div class="value">30+</div></div>
+                <div class="stat-card"><h3>Locations</h3><div class="value">20+</div></div>
+            </div>
+            <h2 style="color: white; margin-bottom: 1rem;">📋 Analytics Dashboards</h2>
+            <div class="dashboard-grid">
+                <a href="visualizations.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>📊 Advanced Visualizations</h2></div>
+                    <div class="card-body"><p>30+ real charts including histograms, box plots, heatmaps, scatter plots</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="eda_dashboard.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>📈 EDA Dashboard</h2></div>
+                    <div class="card-body"><p>Univariate, bivariate, multivariate analysis with real charts</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="feature_analysis.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>🎯 Feature Intelligence</h2></div>
+                    <div class="card-body"><p>Feature importance, correlation ranking, multicollinearity checks</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="statistical_analysis.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>📐 Statistical Intelligence</h2></div>
+                    <div class="card-body"><p>Descriptive & inferential statistics, hypothesis testing</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="model_training.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>🤖 ML Model Development</h2></div>
+                    <div class="card-body"><p>Model training, hyperparameter tuning, prediction generation</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="insights.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>💡 Insight Mining</h2></div>
+                    <div class="card-body"><p>Deep insights with statistical evidence and trend analysis</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="business_insights.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>🏢 Business Interpretation</h2></div>
+                    <div class="card-body"><p>Non-technical insights, trends, opportunities, risk analysis</p><span class="btn">Launch →</span></div>
+                </a>
+                <a href="executive_dashboard.html" class="dashboard-card" target="_blank">
+                    <div class="card-header"><h2>👔 Executive Dashboard</h2></div>
+                    <div class="card-body"><p>Complete BI-style dashboard with KPIs and recommendations</p><span class="btn">Launch →</span></div>
+                </a>
+            </div>
+        </div>
+        <footer><p>© 2024 Tech Salary Analytics | Data Science Pipeline | All Rights Reserved</p></footer>
+    </body>
+    </html>
+    

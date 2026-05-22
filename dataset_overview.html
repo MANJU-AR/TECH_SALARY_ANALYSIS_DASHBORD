@@ -1,0 +1,1592 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Dataset Overview</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background: #f5f5f5; }
+            .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+            h1 { color: #667eea; }
+            table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background: #667eea; color: white; }
+            .missing-bar { background: #ff6b6b; height: 20px; border-radius: 10px; }
+            .missing-container { background: #ddd; border-radius: 10px; margin: 5px 0; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>📁 Dataset Overview</h1>
+            <h2>Basic Information</h2>
+            <p><strong>Shape:</strong> (10000, 50)</p>
+            <p><strong>Memory Usage:</strong> 13.06 MB</p>
+
+            <h2>First 10 Rows</h2>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>employee_id</th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>age</th>
+      <th>gender</th>
+      <th>location</th>
+      <th>currency</th>
+      <th>primary_tech_field</th>
+      <th>job_title</th>
+      <th>employment_type</th>
+      <th>work_arrangement</th>
+      <th>experience_years_total</th>
+      <th>experience_years_in_field</th>
+      <th>education_level</th>
+      <th>languages_spoken</th>
+      <th>skills</th>
+      <th>primary_skill</th>
+      <th>num_skills</th>
+      <th>certifications</th>
+      <th>company_size</th>
+      <th>annual_salary_usd</th>
+      <th>monthly_salary_usd</th>
+      <th>hourly_rate_usd</th>
+      <th>annual_bonus_usd</th>
+      <th>bonus_percentage</th>
+      <th>has_equity</th>
+      <th>equity_total_value_usd</th>
+      <th>equity_vesting_years</th>
+      <th>effective_tax_rate_pct</th>
+      <th>annual_tax_usd</th>
+      <th>annual_net_salary_usd</th>
+      <th>monthly_net_salary_usd</th>
+      <th>monthly_housing_usd</th>
+      <th>monthly_transportation_usd</th>
+      <th>monthly_food_usd</th>
+      <th>monthly_utilities_usd</th>
+      <th>monthly_healthcare_usd</th>
+      <th>monthly_entertainment_usd</th>
+      <th>monthly_education_loan_usd</th>
+      <th>monthly_childcare_usd</th>
+      <th>monthly_miscellaneous_usd</th>
+      <th>monthly_total_expenses_usd</th>
+      <th>annual_total_expenses_usd</th>
+      <th>annual_savings_usd</th>
+      <th>vacation_weeks</th>
+      <th>overtime_hours_per_month</th>
+      <th>months_since_last_promotion</th>
+      <th>num_previous_companies</th>
+      <th>job_satisfaction_score</th>
+      <th>is_actively_looking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>EMP-00001</td>
+      <td>Emma</td>
+      <td>Johansson</td>
+      <td>32</td>
+      <td>Female</td>
+      <td>Remote (Global)</td>
+      <td>USD</td>
+      <td>Backend Development</td>
+      <td>Platform Engineer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>7.7</td>
+      <td>3.2</td>
+      <td>Associate's Degree</td>
+      <td>English</td>
+      <td>Spring Boot; PHP; Python</td>
+      <td>Spring Boot</td>
+      <td>3</td>
+      <td>NaN</td>
+      <td>Small (11-50)</td>
+      <td>100290.66</td>
+      <td>8357.56</td>
+      <td>48.22</td>
+      <td>5014.53</td>
+      <td>5</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>23.29</td>
+      <td>23359.48</td>
+      <td>76931.18</td>
+      <td>6410.93</td>
+      <td>2345.40</td>
+      <td>167.97</td>
+      <td>914.31</td>
+      <td>447.79</td>
+      <td>441.51</td>
+      <td>440.89</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>417.44</td>
+      <td>5175.31</td>
+      <td>62103.72</td>
+      <td>6271.69</td>
+      <td>3</td>
+      <td>12.9</td>
+      <td>38</td>
+      <td>1</td>
+      <td>6</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>EMP-00002</td>
+      <td>Stephanie</td>
+      <td>Zhang</td>
+      <td>30</td>
+      <td>Female</td>
+      <td>Seattle, USA</td>
+      <td>USD</td>
+      <td>QA &amp; Testing</td>
+      <td>QA Engineer</td>
+      <td>Full-time</td>
+      <td>On-site</td>
+      <td>3.0</td>
+      <td>1.9</td>
+      <td>Bootcamp</td>
+      <td>English; Telugu</td>
+      <td>PyTest; API Testing; Cypress; JUnit; Postman; Jira; Jest; Load Testing</td>
+      <td>PyTest</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>Startup (1-10)</td>
+      <td>92383.12</td>
+      <td>7698.59</td>
+      <td>44.41</td>
+      <td>9238.31</td>
+      <td>10</td>
+      <td>True</td>
+      <td>27691</td>
+      <td>1</td>
+      <td>25.31</td>
+      <td>23379.90</td>
+      <td>69003.22</td>
+      <td>5750.27</td>
+      <td>3249.67</td>
+      <td>958.92</td>
+      <td>1320.15</td>
+      <td>768.08</td>
+      <td>627.70</td>
+      <td>778.45</td>
+      <td>675.0</td>
+      <td>1200.0</td>
+      <td>504.87</td>
+      <td>10082.84</td>
+      <td>120994.08</td>
+      <td>10151.16</td>
+      <td>4</td>
+      <td>6.5</td>
+      <td>26</td>
+      <td>1</td>
+      <td>4</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>EMP-00003</td>
+      <td>Raj</td>
+      <td>Lopez</td>
+      <td>32</td>
+      <td>Male</td>
+      <td>Amsterdam, Netherlands</td>
+      <td>EUR</td>
+      <td>Backend Development</td>
+      <td>API Engineer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>Bachelor's Degree</td>
+      <td>English; German; Spanish; Dutch</td>
+      <td>PHP; Express.js; Java; Rust; Spring Boot; C#; Go; Django</td>
+      <td>PHP</td>
+      <td>8</td>
+      <td>AWS Certified Solutions Architect</td>
+      <td>Enterprise (1000+)</td>
+      <td>107153.59</td>
+      <td>8929.47</td>
+      <td>51.52</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>True</td>
+      <td>96832</td>
+      <td>4</td>
+      <td>31.65</td>
+      <td>33915.19</td>
+      <td>73238.40</td>
+      <td>6103.20</td>
+      <td>3336.57</td>
+      <td>217.27</td>
+      <td>1677.54</td>
+      <td>649.89</td>
+      <td>548.70</td>
+      <td>588.93</td>
+      <td>715.0</td>
+      <td>0.0</td>
+      <td>377.88</td>
+      <td>8111.78</td>
+      <td>97341.36</td>
+      <td>4172.42</td>
+      <td>5</td>
+      <td>13.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>6</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>EMP-00004</td>
+      <td>Amelia</td>
+      <td>Taylor</td>
+      <td>31</td>
+      <td>Female</td>
+      <td>London, UK</td>
+      <td>GBP</td>
+      <td>Database &amp; Data Engineering</td>
+      <td>Analytics Engineer</td>
+      <td>Full-time</td>
+      <td>Hybrid</td>
+      <td>14.5</td>
+      <td>12.4</td>
+      <td>Bootcamp</td>
+      <td>English; German; Mandarin</td>
+      <td>Snowflake; Elasticsearch; Cassandra; dbt</td>
+      <td>Snowflake</td>
+      <td>4</td>
+      <td>Linux Foundation Certified</td>
+      <td>Medium (51-200)</td>
+      <td>217074.54</td>
+      <td>18089.55</td>
+      <td>104.36</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>True</td>
+      <td>11378</td>
+      <td>1</td>
+      <td>34.39</td>
+      <td>74655.11</td>
+      <td>142419.43</td>
+      <td>11868.29</td>
+      <td>9351.25</td>
+      <td>2448.10</td>
+      <td>3509.26</td>
+      <td>2225.58</td>
+      <td>1453.19</td>
+      <td>1339.70</td>
+      <td>0.0</td>
+      <td>1860.0</td>
+      <td>1140.39</td>
+      <td>23327.47</td>
+      <td>279929.64</td>
+      <td>19102.74</td>
+      <td>2</td>
+      <td>5.9</td>
+      <td>111</td>
+      <td>5</td>
+      <td>7</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>EMP-00005</td>
+      <td>Sophia</td>
+      <td>Gonzalez</td>
+      <td>42</td>
+      <td>Female</td>
+      <td>Boston, USA</td>
+      <td>USD</td>
+      <td>Embedded Systems &amp; IoT</td>
+      <td>Embedded Engineer</td>
+      <td>Full-time</td>
+      <td>Fully Remote</td>
+      <td>7.9</td>
+      <td>3.8</td>
+      <td>Bootcamp</td>
+      <td>English; Telugu</td>
+      <td>RTOS; ARM; PCB Design; Embedded Linux</td>
+      <td>RTOS</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>Startup (1-10)</td>
+      <td>152246.34</td>
+      <td>12687.19</td>
+      <td>73.20</td>
+      <td>18269.56</td>
+      <td>12</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>31.00</td>
+      <td>47203.88</td>
+      <td>105042.46</td>
+      <td>8753.54</td>
+      <td>4711.18</td>
+      <td>463.91</td>
+      <td>1920.35</td>
+      <td>1199.61</td>
+      <td>1057.43</td>
+      <td>951.37</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>844.73</td>
+      <td>11148.58</td>
+      <td>133782.96</td>
+      <td>3308.59</td>
+      <td>6</td>
+      <td>0.0</td>
+      <td>20</td>
+      <td>3</td>
+      <td>9</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>EMP-00006</td>
+      <td>Kenji</td>
+      <td>Davis</td>
+      <td>28</td>
+      <td>Male</td>
+      <td>San Francisco, USA</td>
+      <td>USD</td>
+      <td>Game Development</td>
+      <td>Game Developer</td>
+      <td>Full-time</td>
+      <td>Fully Remote</td>
+      <td>9.8</td>
+      <td>4.3</td>
+      <td>Bachelor's Degree</td>
+      <td>English</td>
+      <td>Maya; Photon; Blender</td>
+      <td>Maya</td>
+      <td>3</td>
+      <td>Google Cloud Professional</td>
+      <td>Small (11-50)</td>
+      <td>178228.00</td>
+      <td>14852.33</td>
+      <td>85.69</td>
+      <td>14258.24</td>
+      <td>8</td>
+      <td>True</td>
+      <td>2343</td>
+      <td>3</td>
+      <td>36.66</td>
+      <td>65339.34</td>
+      <td>112888.66</td>
+      <td>9407.39</td>
+      <td>7419.95</td>
+      <td>656.75</td>
+      <td>3242.41</td>
+      <td>1844.97</td>
+      <td>1256.71</td>
+      <td>1187.45</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>961.19</td>
+      <td>16569.43</td>
+      <td>198833.16</td>
+      <td>25046.11</td>
+      <td>6</td>
+      <td>9.7</td>
+      <td>113</td>
+      <td>5</td>
+      <td>3</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>EMP-00007</td>
+      <td>Logan</td>
+      <td>Lim</td>
+      <td>29</td>
+      <td>Male</td>
+      <td>New York, USA</td>
+      <td>USD</td>
+      <td>Site Reliability Engineering</td>
+      <td>SRE</td>
+      <td>Full-time</td>
+      <td>Hybrid</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>Bachelor's Degree</td>
+      <td>English; Arabic</td>
+      <td>CI/CD; Go; Linux; Terraform; Incident Management; Kubernetes; AWS; GCP</td>
+      <td>CI/CD</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>Medium (51-200)</td>
+      <td>135173.03</td>
+      <td>11264.42</td>
+      <td>64.99</td>
+      <td>13517.30</td>
+      <td>10</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>29.05</td>
+      <td>39265.11</td>
+      <td>95907.92</td>
+      <td>7992.33</td>
+      <td>5066.64</td>
+      <td>1680.17</td>
+      <td>2312.78</td>
+      <td>1433.31</td>
+      <td>1214.55</td>
+      <td>1008.71</td>
+      <td>577.5</td>
+      <td>1980.0</td>
+      <td>845.77</td>
+      <td>16119.43</td>
+      <td>193433.16</td>
+      <td>21066.89</td>
+      <td>4</td>
+      <td>7.9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>10</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>EMP-00008</td>
+      <td>Jordan</td>
+      <td>Sato</td>
+      <td>32</td>
+      <td>Prefer not to say</td>
+      <td>Miami, USA</td>
+      <td>USD</td>
+      <td>Full-Stack Development</td>
+      <td>Software Engineer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>6.2</td>
+      <td>5.2</td>
+      <td>Bootcamp</td>
+      <td>English; Italian</td>
+      <td>Node.js; Docker; GraphQL; AWS; TypeScript; Python; REST APIs; Redis</td>
+      <td>Node.js</td>
+      <td>8</td>
+      <td>NaN</td>
+      <td>Small (11-50)</td>
+      <td>142783.67</td>
+      <td>11898.64</td>
+      <td>68.65</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>28.44</td>
+      <td>40603.43</td>
+      <td>102180.24</td>
+      <td>8515.02</td>
+      <td>4291.58</td>
+      <td>283.82</td>
+      <td>1981.82</td>
+      <td>786.81</td>
+      <td>703.18</td>
+      <td>967.76</td>
+      <td>0.0</td>
+      <td>1040.0</td>
+      <td>621.58</td>
+      <td>10676.55</td>
+      <td>128118.60</td>
+      <td>12166.23</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>4</td>
+      <td>3</td>
+      <td>6</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>EMP-00009</td>
+      <td>Brian</td>
+      <td>Jones</td>
+      <td>37</td>
+      <td>Male</td>
+      <td>Remote (Global)</td>
+      <td>USD</td>
+      <td>QA &amp; Testing</td>
+      <td>SDET</td>
+      <td>Full-time</td>
+      <td>On-site</td>
+      <td>8.2</td>
+      <td>3.5</td>
+      <td>Bootcamp</td>
+      <td>English; Russian</td>
+      <td>Jira; TestRail; Cypress; Performance Testing; PyTest; Jest</td>
+      <td>Jira</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>Small (11-50)</td>
+      <td>82383.42</td>
+      <td>6865.28</td>
+      <td>39.61</td>
+      <td>4119.17</td>
+      <td>5</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>24.28</td>
+      <td>19999.66</td>
+      <td>62383.76</td>
+      <td>5198.65</td>
+      <td>1700.71</td>
+      <td>536.07</td>
+      <td>721.28</td>
+      <td>388.88</td>
+      <td>392.40</td>
+      <td>308.01</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>294.46</td>
+      <td>4341.81</td>
+      <td>52101.72</td>
+      <td>2920.49</td>
+      <td>5</td>
+      <td>8.2</td>
+      <td>75</td>
+      <td>2</td>
+      <td>10</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>EMP-00010</td>
+      <td>Dmitri</td>
+      <td>Patel</td>
+      <td>36</td>
+      <td>Male</td>
+      <td>New York, USA</td>
+      <td>USD</td>
+      <td>Mobile Development</td>
+      <td>Mobile Architect</td>
+      <td>Full-time</td>
+      <td>Fully Remote</td>
+      <td>2.6</td>
+      <td>1.2</td>
+      <td>Bachelor's Degree</td>
+      <td>English; Russian</td>
+      <td>SwiftUI; Kotlin; Dart; Android SDK</td>
+      <td>SwiftUI</td>
+      <td>4</td>
+      <td>Azure Solutions Architect; CompTIA Security+; PMP</td>
+      <td>Startup (1-10)</td>
+      <td>126312.78</td>
+      <td>10526.07</td>
+      <td>60.73</td>
+      <td>12631.28</td>
+      <td>10</td>
+      <td>True</td>
+      <td>4185</td>
+      <td>4</td>
+      <td>29.88</td>
+      <td>37746.83</td>
+      <td>88565.95</td>
+      <td>7380.50</td>
+      <td>3969.06</td>
+      <td>245.63</td>
+      <td>2500.39</td>
+      <td>791.93</td>
+      <td>884.66</td>
+      <td>778.31</td>
+      <td>742.5</td>
+      <td>0.0</td>
+      <td>748.34</td>
+      <td>10660.82</td>
+      <td>127929.84</td>
+      <td>6735.95</td>
+      <td>4</td>
+      <td>8.0</td>
+      <td>31</td>
+      <td>0</td>
+      <td>4</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+            <h2>Last 10 Rows</h2>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>employee_id</th>
+      <th>first_name</th>
+      <th>last_name</th>
+      <th>age</th>
+      <th>gender</th>
+      <th>location</th>
+      <th>currency</th>
+      <th>primary_tech_field</th>
+      <th>job_title</th>
+      <th>employment_type</th>
+      <th>work_arrangement</th>
+      <th>experience_years_total</th>
+      <th>experience_years_in_field</th>
+      <th>education_level</th>
+      <th>languages_spoken</th>
+      <th>skills</th>
+      <th>primary_skill</th>
+      <th>num_skills</th>
+      <th>certifications</th>
+      <th>company_size</th>
+      <th>annual_salary_usd</th>
+      <th>monthly_salary_usd</th>
+      <th>hourly_rate_usd</th>
+      <th>annual_bonus_usd</th>
+      <th>bonus_percentage</th>
+      <th>has_equity</th>
+      <th>equity_total_value_usd</th>
+      <th>equity_vesting_years</th>
+      <th>effective_tax_rate_pct</th>
+      <th>annual_tax_usd</th>
+      <th>annual_net_salary_usd</th>
+      <th>monthly_net_salary_usd</th>
+      <th>monthly_housing_usd</th>
+      <th>monthly_transportation_usd</th>
+      <th>monthly_food_usd</th>
+      <th>monthly_utilities_usd</th>
+      <th>monthly_healthcare_usd</th>
+      <th>monthly_entertainment_usd</th>
+      <th>monthly_education_loan_usd</th>
+      <th>monthly_childcare_usd</th>
+      <th>monthly_miscellaneous_usd</th>
+      <th>monthly_total_expenses_usd</th>
+      <th>annual_total_expenses_usd</th>
+      <th>annual_savings_usd</th>
+      <th>vacation_weeks</th>
+      <th>overtime_hours_per_month</th>
+      <th>months_since_last_promotion</th>
+      <th>num_previous_companies</th>
+      <th>job_satisfaction_score</th>
+      <th>is_actively_looking</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>9990</th>
+      <td>EMP-09991</td>
+      <td>Logan</td>
+      <td>Wang</td>
+      <td>40</td>
+      <td>Male</td>
+      <td>Boston, USA</td>
+      <td>USD</td>
+      <td>Backend Development</td>
+      <td>Backend Developer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>1.8</td>
+      <td>1.1</td>
+      <td>Bachelor's Degree</td>
+      <td>English</td>
+      <td>Python; Django; Spring Boot; Go; Express.js; C#; PHP</td>
+      <td>Python</td>
+      <td>7</td>
+      <td>Linux Foundation Certified</td>
+      <td>Startup (1-10)</td>
+      <td>118376.92</td>
+      <td>9864.74</td>
+      <td>56.91</td>
+      <td>5918.85</td>
+      <td>5</td>
+      <td>True</td>
+      <td>3802</td>
+      <td>2</td>
+      <td>26.67</td>
+      <td>31574.77</td>
+      <td>86802.15</td>
+      <td>7233.51</td>
+      <td>4286.26</td>
+      <td>222.83</td>
+      <td>1962.59</td>
+      <td>845.92</td>
+      <td>807.74</td>
+      <td>790.28</td>
+      <td>0.0</td>
+      <td>2900.0</td>
+      <td>708.00</td>
+      <td>12523.62</td>
+      <td>150283.44</td>
+      <td>5340.73</td>
+      <td>4</td>
+      <td>2.2</td>
+      <td>5</td>
+      <td>0</td>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9991</th>
+      <td>EMP-09992</td>
+      <td>Nadia</td>
+      <td>Jung</td>
+      <td>31</td>
+      <td>Female</td>
+      <td>Bangalore, India</td>
+      <td>INR</td>
+      <td>DevOps &amp; Cloud</td>
+      <td>DevOps Engineer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>8.3</td>
+      <td>5.1</td>
+      <td>Bootcamp</td>
+      <td>English</td>
+      <td>Terraform; AWS; Linux; Helm; Ansible; Jenkins</td>
+      <td>Terraform</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>Enterprise (1000+)</td>
+      <td>78325.95</td>
+      <td>6527.16</td>
+      <td>37.66</td>
+      <td>9399.11</td>
+      <td>12</td>
+      <td>True</td>
+      <td>2258</td>
+      <td>4</td>
+      <td>22.12</td>
+      <td>17325.61</td>
+      <td>61000.34</td>
+      <td>5083.36</td>
+      <td>858.08</td>
+      <td>50.43</td>
+      <td>441.37</td>
+      <td>144.06</td>
+      <td>163.91</td>
+      <td>151.39</td>
+      <td>0.0</td>
+      <td>900.0</td>
+      <td>124.39</td>
+      <td>2833.63</td>
+      <td>34003.56</td>
+      <td>1278.37</td>
+      <td>4</td>
+      <td>12.1</td>
+      <td>13</td>
+      <td>2</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9992</th>
+      <td>EMP-09993</td>
+      <td>Justin</td>
+      <td>Costa</td>
+      <td>35</td>
+      <td>Male</td>
+      <td>London, UK</td>
+      <td>GBP</td>
+      <td>Embedded Systems &amp; IoT</td>
+      <td>Firmware Engineer</td>
+      <td>Freelance</td>
+      <td>Fully Remote</td>
+      <td>7.3</td>
+      <td>5.5</td>
+      <td>Bachelor's Degree</td>
+      <td>English; Arabic</td>
+      <td>Python; Embedded Linux; RTOS; I2C/SPI; Microcontrollers; ARM; MQTT</td>
+      <td>Python</td>
+      <td>7</td>
+      <td>NaN</td>
+      <td>Enterprise (1000+)</td>
+      <td>233690.69</td>
+      <td>19474.22</td>
+      <td>246.95</td>
+      <td>23369.07</td>
+      <td>10</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>33.34</td>
+      <td>77913.78</td>
+      <td>155776.91</td>
+      <td>12981.41</td>
+      <td>11051.10</td>
+      <td>737.54</td>
+      <td>4411.68</td>
+      <td>1688.40</td>
+      <td>1820.26</td>
+      <td>1600.52</td>
+      <td>232.5</td>
+      <td>0.0</td>
+      <td>824.92</td>
+      <td>22366.92</td>
+      <td>268403.04</td>
+      <td>10303.96</td>
+      <td>2</td>
+      <td>25.6</td>
+      <td>12</td>
+      <td>2</td>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9993</th>
+      <td>EMP-09994</td>
+      <td>Alex</td>
+      <td>Chia</td>
+      <td>28</td>
+      <td>Non-Binary</td>
+      <td>Seattle, USA</td>
+      <td>USD</td>
+      <td>Data Science &amp; ML</td>
+      <td>NLP Engineer</td>
+      <td>Contract</td>
+      <td>Fully Remote</td>
+      <td>8.1</td>
+      <td>6.3</td>
+      <td>High School</td>
+      <td>English; French</td>
+      <td>Pandas; PyTorch; Python; scikit-learn</td>
+      <td>Pandas</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>Medium (51-200)</td>
+      <td>210108.17</td>
+      <td>17509.01</td>
+      <td>137.67</td>
+      <td>21010.82</td>
+      <td>10</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>21.83</td>
+      <td>45866.45</td>
+      <td>164241.72</td>
+      <td>13686.81</td>
+      <td>4554.74</td>
+      <td>483.85</td>
+      <td>2627.64</td>
+      <td>1492.10</td>
+      <td>995.78</td>
+      <td>1165.04</td>
+      <td>825.0</td>
+      <td>1800.0</td>
+      <td>940.44</td>
+      <td>14884.59</td>
+      <td>178615.08</td>
+      <td>27958.56</td>
+      <td>1</td>
+      <td>2.6</td>
+      <td>86</td>
+      <td>5</td>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9994</th>
+      <td>EMP-09995</td>
+      <td>Eric</td>
+      <td>Nakamura</td>
+      <td>25</td>
+      <td>Male</td>
+      <td>London, UK</td>
+      <td>GBP</td>
+      <td>Game Development</td>
+      <td>Graphics Programmer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>10.9</td>
+      <td>7.3</td>
+      <td>Bootcamp</td>
+      <td>English</td>
+      <td>Physics Engine; C++; C#; Unreal Engine; Blender; DirectX; Unity</td>
+      <td>Physics Engine</td>
+      <td>7</td>
+      <td>NaN</td>
+      <td>Medium (51-200)</td>
+      <td>164217.61</td>
+      <td>13684.80</td>
+      <td>78.95</td>
+      <td>19706.11</td>
+      <td>12</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>34.82</td>
+      <td>57174.75</td>
+      <td>107042.86</td>
+      <td>8920.24</td>
+      <td>4782.24</td>
+      <td>322.86</td>
+      <td>2743.50</td>
+      <td>1351.82</td>
+      <td>1204.78</td>
+      <td>1255.61</td>
+      <td>232.5</td>
+      <td>1550.0</td>
+      <td>1127.04</td>
+      <td>14570.35</td>
+      <td>174844.20</td>
+      <td>7316.25</td>
+      <td>4</td>
+      <td>7.4</td>
+      <td>122</td>
+      <td>6</td>
+      <td>2</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>9995</th>
+      <td>EMP-09996</td>
+      <td>Natasha</td>
+      <td>Silva</td>
+      <td>38</td>
+      <td>Female</td>
+      <td>Sydney, Australia</td>
+      <td>AUD</td>
+      <td>Product Management</td>
+      <td>Associate Product Manager</td>
+      <td>Full-time</td>
+      <td>Fully Remote</td>
+      <td>6.2</td>
+      <td>3.9</td>
+      <td>Bootcamp</td>
+      <td>English</td>
+      <td>Jira; Confluence; Wireframing; SQL; Agile; Roadmapping</td>
+      <td>Jira</td>
+      <td>6</td>
+      <td>NaN</td>
+      <td>Large (201-1000)</td>
+      <td>218700.43</td>
+      <td>18225.04</td>
+      <td>105.14</td>
+      <td>10935.02</td>
+      <td>5</td>
+      <td>True</td>
+      <td>890805</td>
+      <td>4</td>
+      <td>25.95</td>
+      <td>56750.30</td>
+      <td>161950.13</td>
+      <td>13495.84</td>
+      <td>5942.90</td>
+      <td>418.59</td>
+      <td>3293.04</td>
+      <td>1140.10</td>
+      <td>1263.54</td>
+      <td>847.48</td>
+      <td>350.0</td>
+      <td>2800.0</td>
+      <td>1102.53</td>
+      <td>17158.18</td>
+      <td>205898.16</td>
+      <td>21516.12</td>
+      <td>3</td>
+      <td>7.3</td>
+      <td>52</td>
+      <td>2</td>
+      <td>7</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9996</th>
+      <td>EMP-09997</td>
+      <td>Jacob</td>
+      <td>Chen</td>
+      <td>37</td>
+      <td>Male</td>
+      <td>Boston, USA</td>
+      <td>USD</td>
+      <td>Full-Stack Development</td>
+      <td>Full Stack Developer</td>
+      <td>Full-time</td>
+      <td>On-site</td>
+      <td>9.7</td>
+      <td>7.0</td>
+      <td>Bootcamp</td>
+      <td>English</td>
+      <td>GraphQL; Python; Vue.js; REST APIs; Docker; MongoDB</td>
+      <td>GraphQL</td>
+      <td>6</td>
+      <td>Certified Scrum Master; Azure Solutions Architect</td>
+      <td>Small (11-50)</td>
+      <td>170835.76</td>
+      <td>14236.31</td>
+      <td>82.13</td>
+      <td>0.00</td>
+      <td>0</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>25.46</td>
+      <td>43487.59</td>
+      <td>127348.17</td>
+      <td>10612.35</td>
+      <td>5897.28</td>
+      <td>1844.78</td>
+      <td>2678.99</td>
+      <td>1181.07</td>
+      <td>952.03</td>
+      <td>1013.10</td>
+      <td>217.5</td>
+      <td>0.0</td>
+      <td>833.94</td>
+      <td>14618.69</td>
+      <td>175424.28</td>
+      <td>34454.83</td>
+      <td>5</td>
+      <td>8.4</td>
+      <td>58</td>
+      <td>6</td>
+      <td>9</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9997</th>
+      <td>EMP-09998</td>
+      <td>Kai</td>
+      <td>Muller</td>
+      <td>31</td>
+      <td>Non-Binary</td>
+      <td>Hyderabad, India</td>
+      <td>INR</td>
+      <td>Full-Stack Development</td>
+      <td>Senior Software Engineer</td>
+      <td>Full-time</td>
+      <td>Remote</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>Bachelor's Degree</td>
+      <td>English</td>
+      <td>TypeScript; Redis; REST APIs; PostgreSQL; Python</td>
+      <td>TypeScript</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Startup (1-10)</td>
+      <td>25695.15</td>
+      <td>2141.26</td>
+      <td>12.35</td>
+      <td>3854.27</td>
+      <td>15</td>
+      <td>True</td>
+      <td>9005</td>
+      <td>3</td>
+      <td>19.77</td>
+      <td>5079.97</td>
+      <td>20615.18</td>
+      <td>1717.93</td>
+      <td>195.58</td>
+      <td>15.32</td>
+      <td>92.00</td>
+      <td>56.74</td>
+      <td>50.64</td>
+      <td>36.35</td>
+      <td>0.0</td>
+      <td>480.0</td>
+      <td>29.41</td>
+      <td>956.04</td>
+      <td>11472.48</td>
+      <td>2374.97</td>
+      <td>4</td>
+      <td>17.1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9998</th>
+      <td>EMP-09999</td>
+      <td>Hassan</td>
+      <td>Chia</td>
+      <td>32</td>
+      <td>Male</td>
+      <td>Boston, USA</td>
+      <td>USD</td>
+      <td>Data Science &amp; ML</td>
+      <td>Data Scientist</td>
+      <td>Full-time</td>
+      <td>Hybrid</td>
+      <td>8.7</td>
+      <td>8.3</td>
+      <td>Bootcamp</td>
+      <td>English; Bengali</td>
+      <td>OpenCV; SQL; Keras; Python; R; PyTorch; scikit-learn; TensorFlow</td>
+      <td>OpenCV</td>
+      <td>8</td>
+      <td>Kubernetes CKA</td>
+      <td>Enterprise (1000+)</td>
+      <td>264531.10</td>
+      <td>22044.26</td>
+      <td>127.18</td>
+      <td>21162.49</td>
+      <td>8</td>
+      <td>False</td>
+      <td>0</td>
+      <td>0</td>
+      <td>27.81</td>
+      <td>73559.80</td>
+      <td>190971.30</td>
+      <td>15914.27</td>
+      <td>7561.73</td>
+      <td>2606.57</td>
+      <td>3293.84</td>
+      <td>1888.80</td>
+      <td>1548.15</td>
+      <td>1774.65</td>
+      <td>362.5</td>
+      <td>1740.0</td>
+      <td>1559.26</td>
+      <td>22335.50</td>
+      <td>268026.00</td>
+      <td>26685.96</td>
+      <td>4</td>
+      <td>14.3</td>
+      <td>78</td>
+      <td>2</td>
+      <td>6</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9999</th>
+      <td>EMP-10000</td>
+      <td>Tyler</td>
+      <td>Costa</td>
+      <td>33</td>
+      <td>Male</td>
+      <td>Seoul, South Korea</td>
+      <td>KRW</td>
+      <td>Frontend Development</td>
+      <td>UI Engineer</td>
+      <td>Part-time</td>
+      <td>Fully Remote</td>
+      <td>6.3</td>
+      <td>2.5</td>
+      <td>Master's Degree</td>
+      <td>English; Tamil</td>
+      <td>HTML/CSS; TypeScript; Vue.js; Webpack; GraphQL</td>
+      <td>HTML/CSS</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>Small (11-50)</td>
+      <td>163072.71</td>
+      <td>13589.39</td>
+      <td>78.40</td>
+      <td>16307.27</td>
+      <td>10</td>
+      <td>True</td>
+      <td>11494</td>
+      <td>4</td>
+      <td>20.58</td>
+      <td>33552.38</td>
+      <td>129520.33</td>
+      <td>10793.36</td>
+      <td>4622.71</td>
+      <td>291.86</td>
+      <td>1825.33</td>
+      <td>980.32</td>
+      <td>666.75</td>
+      <td>775.67</td>
+      <td>287.5</td>
+      <td>1380.0</td>
+      <td>773.86</td>
+      <td>11604.00</td>
+      <td>139248.00</td>
+      <td>12003.00</td>
+      <td>0</td>
+      <td>11.1</td>
+      <td>11</td>
+      <td>3</td>
+      <td>8</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+
+            <h2>Missing Values Analysis</h2>
+            <table>
+                <tr><th>Column</th><th>Missing Count</th><th>Missing %</th><th>Visualization</th></tr>
+    
+                <tr>
+                    <td>employee_id</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>first_name</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>last_name</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>age</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>gender</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>location</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>currency</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>primary_tech_field</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>job_title</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>employment_type</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>work_arrangement</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>experience_years_total</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>experience_years_in_field</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>education_level</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>languages_spoken</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>skills</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>primary_skill</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>num_skills</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>certifications</td>
+                    <td>4508</td>
+                    <td>45.08%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 90.16px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>company_size</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_salary_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_salary_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>hourly_rate_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_bonus_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>bonus_percentage</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>has_equity</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>equity_total_value_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>equity_vesting_years</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>effective_tax_rate_pct</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_tax_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_net_salary_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_net_salary_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_housing_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_transportation_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_food_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_utilities_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_healthcare_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_entertainment_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_education_loan_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_childcare_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_miscellaneous_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>monthly_total_expenses_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_total_expenses_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>annual_savings_usd</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>vacation_weeks</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>overtime_hours_per_month</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>months_since_last_promotion</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>num_previous_companies</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>job_satisfaction_score</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+                <tr>
+                    <td>is_actively_looking</td>
+                    <td>0</td>
+                    <td>0.00%</td>
+                    <td><div class="missing-container"><div class="missing-bar" style="width: 0.0px;"></div></div></td>
+                </tr>
+        
+            </table>
+
+            <h2>Data Types Summary</h2>
+            <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>float64</th>
+      <td>23</td>
+    </tr>
+    <tr>
+      <th>object</th>
+      <td>16</td>
+    </tr>
+    <tr>
+      <th>int64</th>
+      <td>9</td>
+    </tr>
+    <tr>
+      <th>bool</th>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </body>
+    </html>
+    
