@@ -122,7 +122,7 @@ BI-style KPI cards and trend highlights including:
 - **Top locations**: San Francisco ($245K), New York ($238K), London ($198K)
 - **AI/ML roles** are growing 35% YoY and face critical talent shortages
 - **Remote-first hiring** can reduce compensation costs by 15–20%
-- Professionals at **5–8 years experience** represent the highest flight risk
+- Professionals at **5–8 years experience** represent the highest flight risK
 
 ---
 
